@@ -1,0 +1,26 @@
+{
+  "name": "doces",
+  "version": "0.1.0",
+  "author": "terrablue <terrablue@primatejs.com>",
+  "bugs": "https://github.com/terrablue/doces/issues",
+  "repository": "https://github.com/terrablue/doces",
+  "description": "Drop-in replacement for ESDoc, JSDoc",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "fixtures": "node_modules/.bin/esdoc"
+  },
+  "dependencies": {
+    "acorn": "^8.7.1",
+    "runtime-compat": "^0.2.0"
+  },
+  "devDependencies": {
+    "debris": "^0.3.1",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^8.15.0",
+    "eslint-plugin-json": "^3.1.0"
+  },
+  "bin": "./bin/doces.js",
+  "type": "module",
+  "exports": "./exports.js"
+}

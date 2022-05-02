@@ -1,0 +1,46 @@
+{
+  "general": {
+    "access": ["string"],
+    "public": ["string", "access", "public"],
+    "protected": ["string", "access", "protected"],
+    "package": ["string", "access", "package"],
+    "private": ["string", "access", "private"],
+    "deprecated": ["string"],
+    "desc": ["string", "description"],
+    "example": ["array", "examples"],
+    "experimental": ["string"],
+    "ignore": ["boolean"],
+    "see": ["array"],
+    "since": ["string"],
+    "todo": ["array"],
+    "version": ["string"]
+  },
+  "special": {
+    "class": {
+      "extends": ["array_of_identifiers"],
+      "implements": ["array_of_identifiers"],
+      "interface": ["boolean"]
+    },
+    "function": {
+      "abstract": ["boolean"],
+      "emits": ["array_identifier_description"],
+      "listens": ["array_identifier_description"],
+      "override": ["boolean"],
+      "param": ["types", "params"],
+      "property": ["array", "properties"],
+      "returns": ["type"],
+      "return": ["type", "returns"],
+      "throws": ["array_identifier_description"]
+    },
+    "variable": {
+      "type": ["type"]
+    },
+    "virtual": {
+      "external": ["string"],
+      "typedef": ["type"]
+    },
+    "test": {
+      "test": ["string"]
+    }
+  }
+}
